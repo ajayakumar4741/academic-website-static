@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="reg.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Student Registration</h2>
+    <form id="reg-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email ID</label>
+        <input type="email" id="reg-email"  placeholder="Enter email" required>
+        <span id="span-reg-email"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter age" required>
+      </div>
+
+      <div class="form-group">
+        <label >Password</label>
+        <input type="password" id="password"  placeholder="create password" required>
+        <span id="span_password"></span>
+      </div>
+
+      <div class="form-group">
+        <label >Confirm Password</label>
+        <input type="password" id="confirm-password"  placeholder="confirm password" required>
+        <span id="span-confirm_password"></span>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <label class="radio-label"><input type="radio" name="gender" value="male" required> Male</label>
+        <label class="radio-label"><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course</label>
+        <select id="course" name="course" required>
+          <option value="">Select Course</option>
+          <option value="bca">BCA</option>
+          <option value="bsc">B.Sc</option>
+          <option value="bcom">B.Com</option>
+          <option value="ba">BA</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Register</button>
+      <span id="result"></span>
+    </form>
+  </div>
+  <script src="reg.js"></script>
+</body>
+</html>
