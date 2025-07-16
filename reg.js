@@ -26,6 +26,7 @@ function password(){
 
 function confirm_password(){
     let cps = document.querySelector('#confirm-password').value
+    let ps = document.querySelector('#password').value
     const scps = document.querySelector('#span-confirm_password')
     if(cps === ps){
         scps.textContent = 'Matching'
