@@ -1,4 +1,4 @@
-const regp = /^[a-z0-9]{6,15}$/;
+const regp = /^(?=.[a-z])(?=.\d)[a-z\d]{6,15}$/;
 const rege = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/;
 function email(){
     let em = document.querySelector('#reg-email').value
