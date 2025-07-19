@@ -16,7 +16,7 @@ function password(){
     let ps = document.querySelector('#password').value
     const spps = document.querySelector('#span_password')
     if(!regp.test(ps)){
-        spps.textContent = 'Password not strong'
+        spps.textContent = 'Password not strong must contain lowercase and digit'
         spps.style.color = 'red'
     }else{
         spps.textContent = 'good'
